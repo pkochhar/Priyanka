@@ -7,8 +7,137 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/priyanka/ontologies/2018/1/datamgmt">
-        <rdfs:comment>A Harry Potter ontology that links various Harry Potter characters based on their relationships in the JK Rowling&apos;s series.</rdfs:comment>
+        <rdfs:comment>A Harry Potter ontology that links various Harry Potter characters based on their relationships in the Philosopher&apos;s Stone novel.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000079 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000079">
+        <rdfs:label xml:lang="en">is_taught_at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000081 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000081">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">teaches_at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000083 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000083">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000084"/>
+        <rdfs:label xml:lang="en">teaches</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000084 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000084">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">is_taught_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000085 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000085">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000086"/>
+        <rdfs:label xml:lang="en">is_caretaker_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000086">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">takes_care_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000087">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000088"/>
+        <rdfs:label xml:lang="en">is_headmaster_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000088 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000088">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">is_head_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000090 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000090">
+        <rdfs:label xml:lang="en">learns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000092 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000092">
+        <owl:inverseOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000094"/>
+        <rdfs:domain rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048"/>
+        <rdfs:range rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065"/>
+        <rdfs:label xml:lang="en">haunts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000094 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000094">
+        <rdfs:label xml:lang="en">is_haunted_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000095 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000095">
+        <owl:inverseOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000097"/>
+        <rdfs:label xml:lang="en">is_a_house_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000097 -->
+
+    <owl:ObjectProperty rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000097">
+        <rdfs:label xml:lang="en">has_house</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -23,29 +152,575 @@
     
 
 
-    <!-- http://www.pizza.owl/ontologies/PIZZA0000035 -->
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010 -->
 
-    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA0000035">
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010">
+        <rdfs:isDefinedBy>A person or living being who engages in activity in the novel.</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Character</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.pizza.owl/ontologies/PIZZA0000037 -->
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000011 -->
 
-    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA0000037">
-        <rdfs:subClassOf rdf:resource="http://www.pizza.owl/ontologies/PIZZA0000035"/>
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010"/>
+        <owl:disjointWith rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012"/>
+        <rdfs:isDefinedBy>A person who has the ability to perform magic.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Magic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010"/>
         <rdfs:label xml:lang="en">Muggle</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.pizza.owl/ontologies/PIZZA0000038 -->
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000013 -->
 
-    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA0000038">
-        <rdfs:subClassOf rdf:resource="http://www.pizza.owl/ontologies/PIZZA0000035"/>
-        <rdfs:label xml:lang="en">Magic</rdfs:label>
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000013">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010"/>
+        <rdfs:isDefinedBy>A person who has at least one magical parent, but who does not appear to have the ability to perform magic themselves.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Squib</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000015 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012"/>
+        <rdfs:label xml:lang="en">Petunia_Dursley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000016 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000016">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012"/>
+        <rdfs:label xml:lang="en">Dudley_Dursley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000017 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000017">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012"/>
+        <rdfs:label xml:lang="en">Marge_Dursley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000018 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000018">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000012"/>
+        <rdfs:label xml:lang="en">Vernon_Dursley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000020 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000013"/>
+        <rdfs:isDefinedBy>The care taker of Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Argus_Filch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000011"/>
+        <rdfs:isDefinedBy>A character who teaches or instructs, or used to teach or instruct.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000022 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000022">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of a professor at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor_McGonagall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000023 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000023">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of the headmaster at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor_Dumbledore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000024 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000024">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of a professor at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor_Snape</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000025 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000025">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of a professor at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor_Quirrell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000028 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000028">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of a professor at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Professor_Fitwick</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000010"/>
+        <rdfs:isDefinedBy>A pet or animal companion of a human character.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000030 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000030">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a snowy owl.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hedwig</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000031 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000031">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a large dog with three heads.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Fluffy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000032 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000032">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a great dane dog.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Fang</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000033 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000033">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a toad.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Trevor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000034 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000034">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a cat.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Mrs_Norris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000035 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000035">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of a baby dragon.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Norbert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000036 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000036">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000029"/>
+        <rdfs:isDefinedBy>The name of an old rat.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Scabbers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000011"/>
+        <rdfs:isDefinedBy>An individual who studies at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000038 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000038">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Harry_Potter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000039 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000039">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:label xml:lang="en">Ron_Weasley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000040 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000040">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hermione_Granger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000041 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000041">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Draco_Malfoy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000042 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000042">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:label xml:lang="en">Vincent_Crabbe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000043 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000043">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Gregory_Goyle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000044 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000044">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Percy_Weasley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000045 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000045">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Fred_Weasley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000046 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000046">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">George_Weasley</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000047 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000047">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000037"/>
+        <rdfs:isDefinedBy>The name of a student at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Neville_Longbottom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000011"/>
+        <rdfs:isDefinedBy>A being that was once alive, but is now dead, yet still lives on Earth and is visible to other beings.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ghost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000049 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000049">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048"/>
+        <rdfs:isDefinedBy>The name of a ghost at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Nearly_Headless_Nick</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000050 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000050">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048"/>
+        <rdfs:isDefinedBy>The name of a ghost at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Bloody_Baron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000051 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000051">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048"/>
+        <rdfs:isDefinedBy>The name of a ghost at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Helena_Ravenclaw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000052 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000052">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000048"/>
+        <rdfs:isDefinedBy>The name of a ghost at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Fat_Friar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000063 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000063">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000021"/>
+        <rdfs:isDefinedBy>The name of an instructor at Hogwarts.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Madam_Hooch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000064 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000064">
+        <rdfs:isDefinedBy>A location in the Harry Potter series.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000064"/>
+        <owl:disjointWith rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000070"/>
+        <rdfs:isDefinedBy>A school in the United Kingdom that teaches magic.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hogwarts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000066 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000066">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065"/>
+        <rdfs:isDefinedBy>A house of Hogwarts. Students are sorted into houses and compete against other houses in various ways throughtout the school year.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Gryffindor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000067 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000067">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065"/>
+        <rdfs:isDefinedBy>A house of Hogwarts. Students are sorted into houses and compete against other houses in various ways throughtout the school year</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Slytherin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000068 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000068">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065"/>
+        <rdfs:isDefinedBy>A house of Hogwarts. Students are sorted into houses and compete against other houses in various ways throughtout the school year</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ravenclaw</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000069 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000069">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000065"/>
+        <rdfs:isDefinedBy>A house of Hogwarts. Students are sorted into houses and compete against other houses in various ways throughtout the school year</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hufflepuff</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000070 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000070">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000064"/>
+        <rdfs:isDefinedBy>The capital city of the United Kingdom.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">London</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071">
+        <rdfs:isDefinedBy>An area of study taught at a school via a course.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000072 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000072">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A class that teaches how to defend oneself against evil magic.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Defense_Against_the_Dark_Arts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000073 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000073">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A class that teaches the transformation of objects via magic.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Transfiguration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000074 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000074">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A class that teaches how to concoct recipes to create fluids for magical use.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Potions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000075 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A class that teaches spells and enchantments.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Charms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000076 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000076">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A sport that is involves flying on broomsticks, scoring goals, and seeking the Golden Snitch.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Quidditch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.harrypotter.com/ontologies/HARRYPOTTER_0000077 -->
+
+    <owl:Class rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000077">
+        <rdfs:subClassOf rdf:resource="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000071"/>
+        <rdfs:isDefinedBy>A class that teaches the magical properties of plants.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Herbology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000015"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000016"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000017"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000018"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000066"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000067"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000068"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000069"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000072"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000073"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000074"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000075"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000076"/>
+            <rdf:Description rdf:about="http://www.harrypotter.com/ontologies/HARRYPOTTER_0000077"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
